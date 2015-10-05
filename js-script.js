@@ -21,6 +21,6 @@ for (var i = m-1; i >= 0; i--) {
 if (sum[0] == 0) {
     sum.shift();
 }
-for (var j = 0; j <= sum.length; j++) {
+for (var j = 0; j < sum.length; j++) {
     document.write(sum[j])
 }
