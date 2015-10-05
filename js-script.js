@@ -1,14 +1,16 @@
 function func1() {
 var numb1 = document.getElementById("num1").value;
 var numb2 = document.getElementById("num2").value;
-var number1=new Array(1);
-var number2=new Array(1);
-/*for(var a=0)
-hanooz kamel nist
-
-*/
-m=number1.length;
-n=number2.length;
+var m=numb1.length;
+var n=numb2.length;
+var number1=new Array(m);
+var number2=new Array(n);
+for(var a=0;a<m;a++){
+number1[a]=numb1.substr(a,1);
+}
+for(var b=0;b<n;b++){
+number2[b]=numb2.substr(b,1);
+}
 while (n > m) {
         number1.unshift(0);
 }
