@@ -5,19 +5,19 @@ function func1() {
     var n = numb2.length;
     var number1 = new Array(m);
     var number2 = new Array(n);
-    var e = number1.length;
-    var f = number2.length;
+   // var e = number1.length;
+   // var f = number2.length;
     for (var a = 0; a < m; a++) {
         number1[a] = numb1.substr(a, 1);
     }
-    for (var b = 0; b < n - 1; b++) {
+    for (var b = 0; b < n; b++) {
         number2[b] = numb2.substr(b, 1);
     }
     //there is a problem in these two whiles
-    while (f > e) {
+    while (number2.length > number1.length) {
         number1.unshift(0);
     }
-    while (f < e) {
+    while (number2.length < number1.length) {
         number2.unshift(0);
     }
     var sum = new Array(m + 1);
